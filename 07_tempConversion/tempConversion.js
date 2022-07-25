@@ -4,8 +4,10 @@ const ftoc = function(ftemp) {
   return Number(ctemp.toFixed(1));
 };
 
-const ctof = function() {
+const ctof = function(ctemp) {
+  let ftemp = (ctemp * (9/5)) + 32;
 
+  return Number(ftemp.toFixed(1));
 };
 
 // Do not edit below this line
