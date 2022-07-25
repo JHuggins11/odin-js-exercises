@@ -1,3 +1,4 @@
+// ...items - rest parameter to allow multiple args
 const removeFromArray = function(array, ...items) {
     //console.log(array);
     //console.log(items);
