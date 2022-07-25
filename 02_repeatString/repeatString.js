@@ -1,7 +1,7 @@
 const repeatString = function(string, num) {
-    let text = string;
+    let text = "";
 
-    for (let i = 1; i < num; i++) {
+    for (let i = 0; i < num; i++) {
         text += string;
     }
 
