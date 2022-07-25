@@ -2,7 +2,11 @@ const sumAll = function(num1, num2) {
     let start, end;
     let sum = 0;
 
-    if (num1 < 0 || num2 < 0) {
+    //console.log(typeof(num1) === "string");
+    //console.log(typeof(num2) === "string");
+
+    if ((typeof(num1)) === "string" || (typeof(num2) === "string") 
+        || (num1 < 0) || (num2 < 0)) {
         return "ERROR";
     }
     else if (num1 > num2) {
@@ -24,7 +28,7 @@ const sumAll = function(num1, num2) {
     return sum;
 };
 
-//console.log(`Final sum: ${sumAll(123, 1)}`);
+//console.log(`Final sum: ${sumAll(10, "90")}`);
 
 // Do not edit below this line
 module.exports = sumAll;
