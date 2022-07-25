@@ -1,5 +1,7 @@
-const ftoc = function() {
+const ftoc = function(ftemp) {
+  let ctemp = (ftemp - 32) * (5/9);
 
+  return ctemp;
 };
 
 const ctof = function() {
