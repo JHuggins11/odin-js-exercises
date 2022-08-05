@@ -1,6 +1,10 @@
 const fibonacci = function(index) {
     const sequence = [0, 1];
     
+    if (index < 0) {
+        return "OOPS";
+    }
+
     for (let i = 2; i <= index; i++) {
         let a = sequence[i - 1];
         let b = sequence[i - 2];
