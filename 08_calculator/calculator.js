@@ -4,12 +4,18 @@ const add = function(...nums) {
   for (const num of nums) {
     total += num;
   }
-  
+
   return total;
 };
 
-const subtract = function() {
-	
+const subtract = function(num1, ...nums) {
+	let result = num1;
+
+  for (const num of nums) {
+    result -= num;
+  }
+
+  return result;
 };
 
 const sum = function() {
