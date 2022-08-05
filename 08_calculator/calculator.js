@@ -1,4 +1,12 @@
-const add = function(...nums) {
+const add = function(num1, num2) {
+  return num1 + num2;
+};
+
+const subtract = function(num1, num2) {
+	return num1 - num2;
+};
+
+const sum = function(...nums) {
   let total = 0;
 
   for (const num of nums) {
@@ -6,20 +14,6 @@ const add = function(...nums) {
   }
 
   return total;
-};
-
-const subtract = function(num1, ...nums) {
-	let result = num1;
-
-  for (const num of nums) {
-    result -= num;
-  }
-
-  return result;
-};
-
-const sum = function() {
-	
 };
 
 const multiply = function() {
