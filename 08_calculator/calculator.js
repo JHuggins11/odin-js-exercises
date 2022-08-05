@@ -12,6 +12,7 @@ const sum = function(numArray) {
   }
   else {
     let total = numArray.reduce((a, b) => a + b);
+    return total;
   }
 };
 
