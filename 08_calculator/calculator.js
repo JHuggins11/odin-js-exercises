@@ -26,8 +26,14 @@ const multiply = function(numArray) {
   }
 };
 
-const power = function() {
-	
+const power = function(base, exp) {
+	let total = 1;
+
+  for (let i = 1; i <= exp; i++) {
+    total *= base;
+  }
+
+  return total;
 };
 
 const factorial = function() {
