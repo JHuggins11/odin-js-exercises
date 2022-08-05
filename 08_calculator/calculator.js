@@ -44,8 +44,8 @@ const factorial = function(num) {
   }
 
   while (num > 1) {
-    result *= num;
     num--;
+    result *= num;
   }
 
   return result;
